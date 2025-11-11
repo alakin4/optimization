@@ -1,10 +1,30 @@
-# Alan's Python Project Template
-This repository serves as a boilerplate for Python projects, adhering to best practices in project structure, dependency management, testing, and continuous integration.
+# ABout
+This repo is for a toy optimization problem related to an interview.
 
-> This template can be used to inform you of where the most important pieces should be and
-how to keep things organized. For the most part, the template follows the [Python
-Packaging Guide](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
-which is intended to be followed by the larger community.
+# Optimization Problem
+Problem Statement
+The transportation department wants help in reducing the empty miles (equipment
+moved with no demand) they run on their own fleet as a goal for next year. They
+currently run approximately 20% of their total miles as empty. The transportation
+department revises their purchased motor agreements yearly. Purchase motor
+agreements allow the transportation department to use third-party transport and their
+equipment to move company demand. The demand you are given is the average
+number of loads that fill one long trailer and only one trailer can be moved per trip.
+Every origin location needs to get enough equipment either moved back to them or
+purchased for their average demand.
+Average cost per mile of own fleet is $2/mile, even if there is no demand in the
+equipment. Purchased motor has a company average cost of $3/mile currently, but the
+purchase department advised that the cost of purchase may be moving up per industry
+news.
+Goal
+To provide a proof-of-concept solution for transportation to use during their bidding that
+would help minimize their total operating cost while ensuring all demand is moved and
+every origin has enough equipment for their demand.
+
+# WIP
+Most of the code is in the Python Notebook named `FedEx.ipynb`. It consists of modular code meant to be housed in separate scripts and imported as modules. Note that to run `FedEx.ipynb`, you would need to follow the project installation steps below and also have the `interview problem.xlsx` file in a data folder (you create) at the project root.
+
+This modular code can also be used in dashboarding frameworks like streamlit, or even better be served in a FASTAPI endpoints. these are for the future.
 
 ## Project Structure
 
@@ -128,7 +148,3 @@ Ruff does not catch type hint issues. Use pyright:
  ## Pre-commit Hooks
 - Install `pre-commit` globally and initialize it in the repo as indicated above using `pre-commit install
 - Trigger manually using: `pre-commit run --all-files`
-
-## Environment Variables
-A `.env` file can be used (e.g. with `GREETING=Hello`).
-

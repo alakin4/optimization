@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbb7c31c11184553b45b2f0634bdec0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bbb7c31c11184553b45b2f0634bdec0c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbb7c31c11184553b45b2f0634bdec0c = L.map(
+                "map_bbb7c31c11184553b45b2f0634bdec0c",
+                {
+                    center: [35.20565378, -99.68239264],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be8f0f142b546e40ff687e743755f181 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_be8f0f142b546e40ff687e743755f181.addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var poly_line_3245f76144a207977e3dd11b754bcafe = L.polyline(
+                [[34.0536909, -118.242766], [32.7174202, -117.162772]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.4}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            poly_line_3245f76144a207977e3dd11b754bcafe.bindTooltip(
+                `<div>
+                     Los Angeles → San Diego: 2 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b7d754c83aa12f2ce516b79f1551e2d9 = L.polyline(
+                [[34.0536909, -118.242766], [37.3361663, -121.890591]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.6}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            poly_line_b7d754c83aa12f2ce516b79f1551e2d9.bindTooltip(
+                `<div>
+                     Los Angeles → San Jose: 3 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1e40812bcc0b89c4d769e44861bff9af = L.polyline(
+                [[41.8755616, -87.6244212], [40.7127281, -74.0060152]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3.2}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            poly_line_1e40812bcc0b89c4d769e44861bff9af.bindTooltip(
+                `<div>
+                     Chicago → New York: 6 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fb0009a4a437f806d5b23fd087caa731 = L.polyline(
+                [[29.4246002, -98.4951405], [29.7589382, -95.3676974]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            poly_line_fb0009a4a437f806d5b23fd087caa731.bindTooltip(
+                `<div>
+                     San Antonio → Houston: 1 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3503ecee3012465cc660c2b7d95503f = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_a8d021bdc109d818b63cc831875315c2 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_23857a98590f847a26bcb7feae8ac1ff = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eChicago\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a8d021bdc109d818b63cc831875315c2.setIcon(div_icon_23857a98590f847a26bcb7feae8ac1ff);
+            
+    
+            var circle_marker_9ce01fc7142bf40c42386cc7e6cdb7e7 = L.circleMarker(
+                [32.7762719, -96.7968559],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_721e8c6b2a4046cbc1bff797a9de301c = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_5cea2a3c7d84f45932103fae23b5e00f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eDallas\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_721e8c6b2a4046cbc1bff797a9de301c.setIcon(div_icon_5cea2a3c7d84f45932103fae23b5e00f);
+            
+    
+            var circle_marker_c0e6f791538c9ead33281229f5a43e84 = L.circleMarker(
+                [29.7589382, -95.3676974],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_7121f806761692559b79a2ce5b96ddf1 = L.marker(
+                [29.7589382, -95.3676974],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_ea193b389555248723489b697c9ab789 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eHouston\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7121f806761692559b79a2ce5b96ddf1.setIcon(div_icon_ea193b389555248723489b697c9ab789);
+            
+    
+            var circle_marker_eba3c02028c829a3f7f36fc4862aaf33 = L.circleMarker(
+                [34.0536909, -118.242766],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_f36422de5ccd1b19af20f6bca9894d2e = L.marker(
+                [34.0536909, -118.242766],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_a8212ec0e80ecab789042e7aa9ae20c4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eLos Angeles\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f36422de5ccd1b19af20f6bca9894d2e.setIcon(div_icon_a8212ec0e80ecab789042e7aa9ae20c4);
+            
+    
+            var circle_marker_2aab83afdcd609ae1ac9782eef0d7983 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_21e8012c408100061b369ed01891b997 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_b7fd1bab380e5de8593d01cbe8f61622 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eNew York\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_21e8012c408100061b369ed01891b997.setIcon(div_icon_b7fd1bab380e5de8593d01cbe8f61622);
+            
+    
+            var circle_marker_f1c4928085a9a29d6c94ddb76e61b9ca = L.circleMarker(
+                [39.9527237, -75.1635262],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_1a4f10ee6a52aab40c9219a6a1f4f096 = L.marker(
+                [39.9527237, -75.1635262],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_c658af7605f0959a431b96c4c84933be = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003ePhiladelphia\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1a4f10ee6a52aab40c9219a6a1f4f096.setIcon(div_icon_c658af7605f0959a431b96c4c84933be);
+            
+    
+            var circle_marker_8ebee7d213e35f35929e4c7be5e610a6 = L.circleMarker(
+                [33.4484367, -112.074141],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_1a736fd7b74943f48b5b9bacb7679eca = L.marker(
+                [33.4484367, -112.074141],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_da16aa4d5690bdd4d3b02cf6c634fc96 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003ePhoenix\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1a736fd7b74943f48b5b9bacb7679eca.setIcon(div_icon_da16aa4d5690bdd4d3b02cf6c634fc96);
+            
+    
+            var circle_marker_44f7238b585126ec5f6df3dd7d99ac4a = L.circleMarker(
+                [29.4246002, -98.4951405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_cdbbb3e45c8be458e1dff36089b6a64f = L.marker(
+                [29.4246002, -98.4951405],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_383ec2cd53cdeebf0084a7000d82d775 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eSan Antonio\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_cdbbb3e45c8be458e1dff36089b6a64f.setIcon(div_icon_383ec2cd53cdeebf0084a7000d82d775);
+            
+    
+            var circle_marker_277e509a6c0f4c1e6066f0078a8980b4 = L.circleMarker(
+                [32.7174202, -117.162772],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_266353ed9ba006e4438731b65341fb50 = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_bd70098194288a543873557670a73c21 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eSan Diego\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_266353ed9ba006e4438731b65341fb50.setIcon(div_icon_bd70098194288a543873557670a73c21);
+            
+    
+            var circle_marker_54b9be9881624436a1524a279b85da4f = L.circleMarker(
+                [37.3361663, -121.890591],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var marker_2b47e2efa6fdab51c79e2295ba3c3a1d = L.marker(
+                [37.3361663, -121.890591],
+                {
+}
+            ).addTo(map_bbb7c31c11184553b45b2f0634bdec0c);
+        
+    
+            var div_icon_f36c9095d7fc09e0802a21f8b08bb8ab = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; color:#222; text-align:center;\"\u003eSan Jose\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_2b47e2efa6fdab51c79e2295ba3c3a1d.setIcon(div_icon_f36c9095d7fc09e0802a21f8b08bb8ab);
+            
+</script>
+</html>
